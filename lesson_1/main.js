@@ -58,5 +58,5 @@ console.log(name);
 let surname = window.prompt('Як вас По-Батькові?:');
 console.log(surname);
 //Років
-let age = window.prompt('Скільки вам років?:');
+let age = Number(window.prompt('Скільки вам років?:'));
 console.log(age);
