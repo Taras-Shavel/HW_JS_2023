@@ -12,3 +12,102 @@
 //
 //Відповідь
 //
+// - Є змінна х, якій ви надаєте довільне числове значення.
+//   Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
+let x = 13;
+if (x !== 0) {
+    console.log('Вірно')
+} else {
+    console.log('Невірно')
+}
+
+let a = 1
+if (a !== 0) {
+    console.log('Вірно')
+} else {
+    console.log('Невірно')
+}
+
+// - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
+//   (в першу, другу, третю или четверту частину години).
+let time = 54;
+if (time > 0 && time <= 15) {
+    console.log('Перша частина години')
+} else if (time > 15 && time <= 30) {
+    console.log('Друга частина години')
+} else if (time > 30 && time <= 45) {
+    console.log('Третя частина години')
+} else if (time > 45 && time < 60) {
+    console.log('Четверта частина години')
+} else {
+    console.log('Невірно')
+}
+
+// У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
+let day = 81;
+if (day > 0 && day <= 10) {
+    console.log('Перша декада місяця')
+} else if (day > 10 && day <= 20) {
+    console.log('Друга декада місяця')
+} else if (day > 20 && day <= 31) {
+    console.log('Третя декада місяця')
+} else {
+    console.log('Місяць має лише 31 день')
+}
+
+// - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
+
+let i = Number(window.prompt('Ведіть день тижня:'));
+
+switch(i){
+    case 1:
+        console.log('Monday')
+        break
+    case 2:
+        console.log('Tuesday')
+        break
+    case 3:
+        console.log('Wednesday')
+        break
+    case 4:
+        console.log('Thursday')
+        break
+    case 5:
+        console.log('Friday')
+        break
+    case 6:
+        console.log('Saturday')
+        break
+    case 7:
+        console.log('Sunday')
+        break
+    default:
+        console.log('Enter a number from 1 to 7')
+}
+
+// - Користувач вводить або має два числа.
+//    Потрібно знайти та вивести максимальне число з тих двох .
+//    Також потрібно врахувати коли введені рівні числа.
+
+let number_1 = Number(window.prompt('Ведіть перше число:'));
+let number_2 = Number(window.prompt('Ведіть друге число:'));
+
+
+if(number_1 > number_2){
+    console.log('Max:',number_1)
+}else if(number_2 > number_1){
+    console.log('Max Number_2')
+}else if(number_1 === number_2){
+    console.log('This numbers ==')
+}
+
+
+
+
+
+
+
+
+
+
+
