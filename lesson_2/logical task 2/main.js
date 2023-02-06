@@ -44,7 +44,7 @@ if (time > 0 && time <= 15) {
 }
 
 // У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
-let day = 81;
+let day = 21;
 if (day > 0 && day <= 10) {
     console.log('Перша декада місяця')
 } else if (day > 10 && day <= 20) {
@@ -96,9 +96,9 @@ let number_2 = Number(window.prompt('Ведіть друге число:'));
 if(number_1 > number_2){
     console.log('Max:',number_1)
 }else if(number_2 > number_1){
-    console.log('Max Number_2')
+    console.log('Max:', Number_2)
 }else if(number_1 === number_2){
-    console.log('This numbers ==')
+    console.log('These numbers are equal:', number_1, '==', number_2)
 }
 
 
