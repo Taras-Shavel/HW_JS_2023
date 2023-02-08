@@ -96,7 +96,7 @@ let number_2 = Number(window.prompt('Ведіть друге число:'));
 if(number_1 > number_2){
     console.log('Max:',number_1)
 }else if(number_2 > number_1){
-    console.log('Max:', Number_2)
+    console.log('Max:', number_2)
 }else if(number_1 === number_2){
     console.log('These numbers are equal:', number_1, '==', number_2)
 }

@@ -1,0 +1,12 @@
+.product-image{
+    width: 300px;
+}
+.product-title{
+    background: peachpuff;
+    width: 300px;
+    text-align: center;
+}
+.product-card{
+    border: 3px solid black;
+    width: 300px;
+}
