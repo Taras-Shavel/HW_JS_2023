@@ -618,3 +618,15 @@ let userMas = [
         body: 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut'
     }
 ];
+document.write(`<div class="container">`)
+for (let userMa of userMas) {
+    console.log(userMa)
+    document.write(`
+        <div class="wrap">
+            <div class="post-card">
+                <h3>${userMa.id} - ${userMa.title}</h3>
+                <p>${userMa.body}</p>
+            </div>
+        </div>`)
+}
+document.write(`</div>`)

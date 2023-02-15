@@ -286,24 +286,23 @@
 // }
 //
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
-let books;
-books = [
+let books = [
     {
         title: 'Кобзар',
         pages: 235,
-        authors: 'Тарас Шевченко',
-        genre: ['Поетичні твори','shavel'],
+        authors: ['Тарас Шевченко','Леся Українка'],
+        genre: ['Поетичні твори', 'Драматичний твір'],
     },
     {
         title: 'Кайдашева сімя',
         pages: 435,
-        authors: 'Іван Нечуй-Левицкий',
+        authors: ['Іван Нечуй-Левицкий'],                     //Done
         genre: ['Повість'],
     },
     {
         title: 'Лісова пісня',
         pages: 351,
-        authors: ['Леся Українка','shavel'],
+        authors: ['Леся Українка', 'Тарас Шевченко'],
         genre: ['Драматичний твір', 'Поетичні твори', 'Повість'],
     }
 ];
@@ -316,6 +315,12 @@ books = [
 //     console.log(`Max pages: ${books[2].pages}`)
 // }
 // - знайти книжку/ки з найбільшою кількістю жанрів
+// for (let i = 0; i < books.length; i++) {
+//     const book = books[i];
+//     if(book.genre.length > book.genre.length[-1]){
+//         console.log(book.genre)
+//     }
+// }
 // if((books[0].genre.length > books[1].genre.length) && (books[0].genre.length > books[2].genre.length)){
 //     console.log(`Title book: ${books[0].title}, Genre Book: ${books[0].genre}`)
 // }else if((books[1].genre.length > books[2].genre.length) && (books[1].genre.length > books[0].genre.length)){
@@ -324,15 +329,32 @@ books = [
 //     console.log(`Title book: ${books[2].title}, Genre Book: ${books[2].genre}`)
 // }
 // - знайти книжку/ки з найдовшою назвою
+// for (let i = 0; i < books.length; i++) {
+//     const book = books[i];
+//     if(book.title.length > book.title.length-1) {
+//         console.log(book.title)
+//     } else{
+//         console.log('loh')
+//     }
+//
+// }
 // - знайти книжку/ки які писали 2 автори
-if(books[0].authors === 2){
-    console.log(books[0].authors)
-}else if(books[1].authors === 2){
-    console.log(books[1].authors)
-}else if(books[2].authors === 2){
-    console.log(books[2].authors)
-}
+// for (let i = 0; i < books.length; i++) {
+//     const book = books[i];
+//     if(book.authors.length === 2){
+//         console.log(`Title book: ${book.title}`)                //Done
+//     }
+//
+// }
+
 // - знайти книжку/ки які писав 1 автор
+// for (let i = 0; i < books.length; i++) {
+//     const book = books[i];
+//     if(book.authors.length === 1){
+//         console.log(`Title book: ${book.title}`)             //Done
+//     }
+//
+// }
 
 
 
