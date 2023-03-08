@@ -1,0 +1,16 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    border: 3px dashed black;
+}
+
+.container {
+    width: 350px;
+    padding: 10px;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+}
