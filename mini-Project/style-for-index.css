@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.divBlock {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 40%;
+    align-items: center;
+    padding: 5px;
+}
+.h1ID{
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+}
+.h1Name{
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+}
+.button {
+    font-size: 25px;
+    width: 50%;
+    margin-bottom: 5px;
+}

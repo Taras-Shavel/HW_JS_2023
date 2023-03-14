@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+}
+#container{
+    width: 50%;
+    text-align: left;
+    margin-left: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+#divAddress{
+    margin-left: 10px;
+}
+#divGeo{
+    margin-left: 20px;
+}
+#divCompany{
+    margin-left: 10px;
+}
+.button{
+    margin-top: 10px;
+    width: 90%;
+    font-size: 20px;
+}
+h1{
+    width: 100%;
+}
+.divUserId{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 10px;
+}
+.divList{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 18%;
+    border: 1px solid black;
+    padding: 5px;
+    background: honeydew;
+}
+.buttonPost{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
+    justify-content: center;
+    width: 90%;
+}
