@@ -37,6 +37,13 @@ let button = document.createElement('button');
 button.classList.add('button'); //class button
 button.innerText = 'post of current user';
 
+button.addEventListener('mouseover',() => {
+    button.style.background = '#fff457'
+})
+button.addEventListener('mouseout',() => {
+    button.style.background = ''
+})
+
 container.append(divUser, divAddress, divGeo, divUserContact, divCompany)
 document.body.append(container, button)
 
@@ -64,6 +71,12 @@ button.addEventListener('click', function () {
                 buttonPost.addEventListener('click', () => {
                     document.location.href = 'post-details.html?data=' +
                         JSON.stringify(postElement);
+                })
+                buttonPost.addEventListener('mouseover',() => {
+                    buttonPost.style.background = 'peachpuff'
+                })
+                buttonPost.addEventListener('mouseout',() => {
+                    buttonPost.style.background = ''
                 })
 
                 divList.append(buttonPost);

@@ -22,6 +22,14 @@ fetch(url)
         button.addEventListener('click', function () {
             document.location.href = 'user-details.html?data=' + JSON.stringify(user);
         })
+        button.addEventListener('mouseover', () =>{
+            button.style.background = '#ff0000';
+            button.style.color = 'white';
+        })
+        button.addEventListener('mouseout', () => {
+            button.style.background = '';
+            button.style.color = '';
+        })
 
         div.append(h1ID, h1Name, button)
         document.body.appendChild(div)
