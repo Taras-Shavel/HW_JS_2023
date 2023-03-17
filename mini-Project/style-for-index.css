@@ -4,32 +4,41 @@ body {
     width: 100%;
     flex-wrap: wrap;
     row-gap: 20px;
+    background: #0f1b41;
 }
 
 .divBlock {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid #aac4aa;
     width: 40%;
     align-items: center;
     padding: 5px;
     border-radius: 10px;
-    background: #ecebeb;
+    /*background: #ecebeb;*/
+    background: #464d6b;
 }
-.h1ID{
+
+.h1ID {
     text-align: center;
     width: 100%;
     margin-top: 5px;
+    color: white;
 }
-.h1Name{
+
+.h1Name {
     text-align: center;
     width: 100%;
     margin-top: 0;
+    color: white;
 }
+
 .button {
     font-size: 25px;
     width: 50%;
     margin-bottom: 5px;
     border-radius: 5px;
-
+    background: #0f1b41;
+    color: white;
+    border: 1px solid #aac4aa;
 }

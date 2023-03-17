@@ -38,10 +38,12 @@ button.classList.add('button'); //class button
 button.innerText = 'post of current user';
 
 button.addEventListener('mouseover',() => {
-    button.style.background = '#fff457'
+    button.style.background = '#f8ee80'
+    button.style.color = '#464d6b'
 })
 button.addEventListener('mouseout',() => {
     button.style.background = ''
+    button.style.color = '';
 })
 
 container.append(divUser, divAddress, divGeo, divUserContact, divCompany)
@@ -56,7 +58,7 @@ button.addEventListener('click', function () {
             let h1Title = document.createElement('h1')
 
             divUserId.classList.add('divUserId'); // class divUserId
-            h1Title.innerText = `Title all Posts ID: ${user.id}`
+            h1Title.innerHTML = `<u>Title all Posts ID: ${user.id}</u>`
             divUserId.appendChild(h1Title)
 
             for (let postElement of post) {
@@ -73,7 +75,7 @@ button.addEventListener('click', function () {
                         JSON.stringify(postElement);
                 })
                 buttonPost.addEventListener('mouseover',() => {
-                    buttonPost.style.background = 'peachpuff'
+                    buttonPost.style.background = '#f8ee80'
                 })
                 buttonPost.addEventListener('mouseout',() => {
                     buttonPost.style.background = ''

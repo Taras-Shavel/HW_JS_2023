@@ -23,8 +23,8 @@ fetch(url)
             document.location.href = 'user-details.html?data=' + JSON.stringify(user);
         })
         button.addEventListener('mouseover', () =>{
-            button.style.background = '#ff0000';
-            button.style.color = 'white';
+            button.style.background = '#aac4aa';
+            button.style.color = '#0f1b41';
         })
         button.addEventListener('mouseout', () => {
             button.style.background = '';
